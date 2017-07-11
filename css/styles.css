@@ -57,6 +57,17 @@
   line-height: 1.4;
 }
 
+.b-item__download-btn {
+  background: #fff;
+  color: #008da9;
+  float: right;
+  font-family: 'UniversLTCYR-Roman';
+  font-size: 16px;
+  margin: 0 7px 7px 0;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
 .slick-arrow {
   background: transparent;
   border: none;

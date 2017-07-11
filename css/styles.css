@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Fugue';
+  src: url('../fonts/fugue/regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/fugue/regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fugue/regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/fugue/regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/fugue/regular.svg#26a5f4031ec4a4c21898163151754229') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'UniversLTCYR-Roman';
+  src: url('https://ucarecdn.com/4cfec4e9-6960-44ed-842e-6dcb75afdf18/33656C_0_0.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.b-slider__wrapper {
+  display: block;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.b-slider__item {
+  background-color: #008da9;
+  color: #fff;
+  margin: 20px;
+}
+
+.b-slider__item img {
+  width: 100%;
+}
+
+.b-item__title {
+  border-bottom: 1px solid #fff;
+  font-family: 'Fugue';
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.b-item__customer {
+  font-family: 'Fugue';
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.b-item__description {
+  padding: 10px 20px;
+  font-family: 'UniversLTCYR-Roman';
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.slick-arrow {
+  background: transparent;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  font-size: 0;
+  height: 20px;
+  line-height: 0;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-prev::before {
+  content: '<';
+  background: #000;
+  color: #000;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-next::after {
+  content: '>';
+  background: #000;
+  color: #000;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}

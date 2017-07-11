@@ -18,6 +18,8 @@
 
 .b-slider__wrapper {
   display: block;
+  margin: 0 auto;
+  max-width: 1400px;
   overflow: hidden;
   padding: 0 40px;
 }
@@ -29,6 +31,7 @@
 }
 
 .b-slider__item img {
+  max-height: 350px;
   width: 100%;
 }
 

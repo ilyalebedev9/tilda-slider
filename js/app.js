@@ -5,7 +5,6 @@ this.App || (this.App = {});
 this.App.Slider = {
   init: function() {
     this.initSlider();
-    this.onResize();
   },
 
   initSlider: function() {
@@ -46,26 +45,6 @@ this.App.Slider = {
         }
       ]
     });
-
-    setTimeout(function () {
-      App.Slider.calculateHeight();
-    }, 100);
-  },
-
-  onResize: function() {
-    $(window).on('resize', function() {
-      setTimeout(function () {
-        App.Slider.calculateHeight();
-      }, 100);
-    });
-  },
-
-  calculateHeight: function() {
-    var maxHeight = Math.max.apply(null, $('.js-slider .b-slider__item').map(function(){
-      return $(this).outerHeight();
-    }).get());
-
-    $('.js-slider .b-slider__item').css('min-height', maxHeight)
   }
 };
 

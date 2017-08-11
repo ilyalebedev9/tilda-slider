@@ -17,11 +17,14 @@
 }
 
 .b-slider__wrapper {
-  display: block;
-  margin: 0 auto;
-  max-width: 1400px;
+  margin: 40px auto;
+  max-width: 1370px;
   overflow: hidden;
   padding: 0 40px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .b-slider__item {
@@ -30,8 +33,10 @@
   transition: min-height 0.3s ease;
   background-color: #008da9;
   color: #fff;
-  margin: 20px;
+  margin: 0 15px;
   position: relative;
+  height: initial;
+  display: none;
 }
 
 .b-slider__item img {
@@ -47,6 +52,9 @@
   min-height: 48px;
   padding: 8px 15px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
 }
 
 .b-item__title-line {
@@ -60,6 +68,9 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
 }
 
 .b-item__description {
@@ -80,6 +91,16 @@
   position: absolute;
   right: 7px;
   text-decoration: none;
+}
+
+.slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  flex-direction: column;
 }
 
 .slick-arrow {

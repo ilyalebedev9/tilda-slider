@@ -43,6 +43,11 @@ this.App.Slider = {
             slidesToScroll: 1
           }
         }
+        @media only screen (min-width: 321px) and (max-width: 480px) {
+    .b-item__title {
+        font-size: 10px;
+    }
+}
       ]
     });
   }
